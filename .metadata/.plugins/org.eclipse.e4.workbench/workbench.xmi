@@ -72,6 +72,7 @@
           <tags>persp.newWizSC:org.eclipse.jdt.junit.wizards.NewTestCaseCreationWizard</tags>
           <tags>persp.actionSet:org.eclipse.jdt.junit.JUnitActionSet</tags>
           <tags>persp.viewSC:org.eclipse.ant.ui.views.AntView</tags>
+          <tags>persp.actionSet:org.jkiss.dbeaver.search.searchActionSet</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_8m92QUAWEemKW7ofSEOvWg" selectedElement="_8m92QkAWEemKW7ofSEOvWg" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_8m92QkAWEemKW7ofSEOvWg" containerData="2500" selectedElement="_8m92Q0AWEemKW7ofSEOvWg">
               <children xsi:type="basic:PartStack" xmi:id="_8m92Q0AWEemKW7ofSEOvWg" elementId="left" containerData="6000" selectedElement="_8m92REAWEemKW7ofSEOvWg">
@@ -87,7 +88,7 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_8m92SkAWEemKW7ofSEOvWg" elementId="org.eclipse.egit.ui.RepositoriesView" toBeRendered="false" ref="_8m8BEEAWEemKW7ofSEOvWg"/>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_8m92S0AWEemKW7ofSEOvWg" containerData="7500">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_8m92S0AWEemKW7ofSEOvWg" containerData="7500" selectedElement="_8m92VUAWEemKW7ofSEOvWg">
               <children xsi:type="basic:PartSashContainer" xmi:id="_8m92TEAWEemKW7ofSEOvWg" containerData="7500" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_8m92TUAWEemKW7ofSEOvWg" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_8mU9EEAWEemKW7ofSEOvWg"/>
                 <children xsi:type="basic:PartSashContainer" xmi:id="_8m92TkAWEemKW7ofSEOvWg" containerData="2500">
@@ -198,8 +199,14 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_8mpGIEAWEemKW7ofSEOvWg" elementId="org.eclipse.jdt.ui.JavadocView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Javadoc" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/eview16/javadoc.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.jdt.internal.ui.infoviews.JavadocView"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.jdt.ui"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:Java</tags>
+      <menus xmi:id="_ewxwgEsVEem97Z-RDKkBRQ" elementId="org.eclipse.jdt.ui.JavadocView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_ewxwgUsVEem97Z-RDKkBRQ" elementId="org.eclipse.jdt.ui.JavadocView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_8mptMEAWEemKW7ofSEOvWg" elementId="org.eclipse.jdt.ui.SourceView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Declaration" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/eview16/source.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.jdt.internal.ui.infoviews.SourceView"/>
@@ -286,7 +293,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_8ToDgEAWEemKW7ofSEOvWg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_8UHLsEAWEemKW7ofSEOvWg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_7gJ_N0AWEemKW7ofSEOvWg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_YeM_MEsVEem97Z-RDKkBRQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_7gJ_N0AWEemKW7ofSEOvWg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_8ToqkEAWEemKW7ofSEOvWg" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -307,7 +314,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_8TrG0EAWEemKW7ofSEOvWg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_8UN5YEAWEemKW7ofSEOvWg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_7gFG4EAWEemKW7ofSEOvWg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_YeTs4EsVEem97Z-RDKkBRQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_7gFG4EAWEemKW7ofSEOvWg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_8Trt4EAWEemKW7ofSEOvWg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -328,6 +335,9 @@
         <tags>Draggable</tags>
         <tags>HIDEABLE</tags>
         <tags>SHOW_RESTORE_MENU</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_bEV7AEsVEem97Z-RDKkBRQ" elementId="breadcrumb.toolcontrol" contributionURI="bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer">
+        <tags>breadcrumb_visible_tag</tags>
       </children>
     </trimBars>
     <trimBars xmi:id="_8e11AEAWEemKW7ofSEOvWg" elementId="org.eclipse.ui.trim.status" side="Bottom">
@@ -424,6 +434,8 @@
     <bindings xmi:id="_7hsQR0AWEemKW7ofSEOvWg" keySequence="ALT+CTRL+ARROW_UP" command="_7gMbgEAWEemKW7ofSEOvWg"/>
     <bindings xmi:id="_7hsQSUAWEemKW7ofSEOvWg" keySequence="ALT+CTRL+ARROW_DOWN" command="_7gMbcUAWEemKW7ofSEOvWg"/>
     <bindings xmi:id="_7hsQS0AWEemKW7ofSEOvWg" keySequence="CTRL+F10" command="_7gKmREAWEemKW7ofSEOvWg"/>
+    <bindings xmi:id="_W6BPoUsVEem97Z-RDKkBRQ" keySequence="CTRL+F" command="_W4LcqUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6H9UEsVEem97Z-RDKkBRQ" keySequence="ESC" command="_W4NRxUsVEem97Z-RDKkBRQ"/>
   </bindingTables>
   <bindingTables xmi:id="_7hMhAEAWEemKW7ofSEOvWg" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" bindingContext="_7gTJMUAWEemKW7ofSEOvWg">
     <bindings xmi:id="_7hMhAUAWEemKW7ofSEOvWg" keySequence="INSERT" command="_7gLNkEAWEemKW7ofSEOvWg"/>
@@ -599,6 +611,24 @@
     <bindings xmi:id="_7hsQSEAWEemKW7ofSEOvWg" keySequence="CTRL+F9" command="_7gD4u0AWEemKW7ofSEOvWg"/>
     <bindings xmi:id="_7hs3UEAWEemKW7ofSEOvWg" keySequence="CTRL+F11" command="_7gLNekAWEemKW7ofSEOvWg"/>
     <bindings xmi:id="_7hs3UUAWEemKW7ofSEOvWg" keySequence="CTRL+F12" command="_7gD4k0AWEemKW7ofSEOvWg"/>
+    <bindings xmi:id="_W5564EsVEem97Z-RDKkBRQ" keySequence="CTRL+SHIFT+," command="_W4MqtEsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W5564UsVEem97Z-RDKkBRQ" keySequence="CTRL+CR" command="_W4MDuksVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W57JAUsVEem97Z-RDKkBRQ" keySequence="CTRL+SHIFT+." command="_W4MDsUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W58XIEsVEem97Z-RDKkBRQ" keySequence="ALT+`" command="_W4MDpUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6BPoksVEem97Z-RDKkBRQ" keySequence="CTRL+9" command="_W4LcrEsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6E6AEsVEem97Z-RDKkBRQ" keySequence="CTRL+0" command="_W4K1gUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6FhEUsVEem97Z-RDKkBRQ" keySequence="CTRL+SHIFT+V" command="_W4PuB0sVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6GvMUsVEem97Z-RDKkBRQ" keySequence="CTRL+SHIFT+A" command="_W4KOfksVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6GvNEsVEem97Z-RDKkBRQ" keySequence="CTRL+SHIFT+C" command="_W4PuCEsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6GvNUsVEem97Z-RDKkBRQ" keySequence="CTRL+SHIFT+D" command="_W4MDrksVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6HWQUsVEem97Z-RDKkBRQ" keySequence="CTRL+SHIFT+F" command="_W4KOdUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6LApUsVEem97Z-RDKkBRQ" keySequence="ALT+CTRL+SHIFT+C" command="_W4NRy0sVEem97Z-RDKkBRQ">
+      <tags>platform:win32</tags>
+    </bindings>
+    <bindings xmi:id="_W6LnsksVEem97Z-RDKkBRQ" keySequence="ALT+CTRL+SHIFT+R" command="_W4PG-ksVEem97Z-RDKkBRQ">
+      <tags>platform:win32</tags>
+    </bindings>
+    <bindings xmi:id="_W6Lns0sVEem97Z-RDKkBRQ" keySequence="ALT+CTRL+SHIFT+U" command="_W4PuCksVEem97Z-RDKkBRQ"/>
   </bindingTables>
   <bindingTables xmi:id="_7hMhCEAWEemKW7ofSEOvWg" elementId="org.eclipse.ant.ui.AntEditorScope" bindingContext="_7gTJQEAWEemKW7ofSEOvWg">
     <bindings xmi:id="_7hNIEEAWEemKW7ofSEOvWg" keySequence="F3" command="_7gAOQkAWEemKW7ofSEOvWg"/>
@@ -760,6 +790,93 @@
   <bindingTables xmi:id="_8mhKUUAWEemKW7ofSEOvWg" bindingContext="_8mhKUEAWEemKW7ofSEOvWg"/>
   <bindingTables xmi:id="_8mhKU0AWEemKW7ofSEOvWg" bindingContext="_8mhKUkAWEemKW7ofSEOvWg"/>
   <bindingTables xmi:id="_8mhxYUAWEemKW7ofSEOvWg" bindingContext="_8mhxYEAWEemKW7ofSEOvWg"/>
+  <bindingTables xmi:id="_W5lKwEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.perspective" bindingContext="_W4V0oksVEem97Z-RDKkBRQ">
+    <bindings xmi:id="_W5oOEEsVEem97Z-RDKkBRQ" keySequence="F3" command="_W4MDr0sVEem97Z-RDKkBRQ">
+      <tags>platform:win32</tags>
+    </bindings>
+    <bindings xmi:id="_W6H9UksVEem97Z-RDKkBRQ" keySequence="CTRL+[" command="_W4MDr0sVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6H9VEsVEem97Z-RDKkBRQ" keySequence="CTRL+]" command="_W4PuBksVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6OD8UsVEem97Z-RDKkBRQ" keySequence="CTRL+F3" command="_W4PuBksVEem97Z-RDKkBRQ">
+      <tags>platform:win32</tags>
+    </bindings>
+  </bindingTables>
+  <bindingTables xmi:id="_W5o1IEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.context.navigator" bindingContext="_W4VNkUsVEem97Z-RDKkBRQ">
+    <bindings xmi:id="_W5qqUEsVEem97Z-RDKkBRQ" keySequence="F4" command="_W4LcsEsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6BPoEsVEem97Z-RDKkBRQ" keySequence="CTRL+D" command="_W4PuD0sVEem97Z-RDKkBRQ"/>
+  </bindingTables>
+  <bindingTables xmi:id="_W5qqUUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.script.focused" bindingContext="_W4VNk0sVEem97Z-RDKkBRQ">
+    <bindings xmi:id="_W5qqUksVEem97Z-RDKkBRQ" keySequence="F4" command="_W4LcsUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W5r4c0sVEem97Z-RDKkBRQ" keySequence="ALT+ARROW_UP" command="_W4Lcl0sVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W5ttoEsVEem97Z-RDKkBRQ" keySequence="ALT+ARROW_DOWN" command="_W4LcpUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W54FsEsVEem97Z-RDKkBRQ" keySequence="ALT+X" command="_W4Lcm0sVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W57JAEsVEem97Z-RDKkBRQ" keySequence="CTRL+CR" command="_W4KOdksVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W58-MEsVEem97Z-RDKkBRQ" keySequence="ALT+CTRL+'" command="_W4K1i0sVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6HWQEsVEem97Z-RDKkBRQ" keySequence="CTRL+SHIFT+E" command="_W4MDqUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6H9U0sVEem97Z-RDKkBRQ" keySequence="CTRL+\" command="_W4MDoEsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6LApEsVEem97Z-RDKkBRQ" keySequence="ALT+CTRL+SHIFT+A" command="_W4KOeksVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6LApksVEem97Z-RDKkBRQ" keySequence="ALT+CTRL+SHIFT+C" command="_W4PG8EsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6LnsUsVEem97Z-RDKkBRQ" keySequence="ALT+CTRL+SHIFT+X" command="_W4PuCUsVEem97Z-RDKkBRQ"/>
+  </bindingTables>
+  <bindingTables xmi:id="_W5rRYEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.context.resultset.focused" bindingContext="_W4V0oUsVEem97Z-RDKkBRQ">
+    <bindings xmi:id="_W5r4cEsVEem97Z-RDKkBRQ" keySequence="ALT+INSERT" command="_W4MDqEsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W5xYAEsVEem97Z-RDKkBRQ" keySequence="ALT+DEL" command="_W4PuDUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6ABgksVEem97Z-RDKkBRQ" keySequence="CR" command="_W4K1jUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6GIIUsVEem97Z-RDKkBRQ" keySequence="SHIFT+CR" command="_W4KOgEsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6H9UUsVEem97Z-RDKkBRQ" keySequence="ESC" command="_W4Lcr0sVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6LAoEsVEem97Z-RDKkBRQ" keySequence="CTRL+R" command="_W4MDsksVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6LAoUsVEem97Z-RDKkBRQ" keySequence="CTRL+S" command="_W4LckUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6MOwksVEem97Z-RDKkBRQ" keySequence="CTRL+INSERT" command="_W4KOcEsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6OD9EsVEem97Z-RDKkBRQ" keySequence="CTRL+ARROW_DOWN" command="_W4KOfUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6RHQEsVEem97Z-RDKkBRQ" keySequence="ALT+CTRL+INSERT" command="_W4PuDEsVEem97Z-RDKkBRQ"/>
+  </bindingTables>
+  <bindingTables xmi:id="_W5r4cUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.context.resultset" bindingContext="_W4VNlEsVEem97Z-RDKkBRQ">
+    <bindings xmi:id="_W5r4cksVEem97Z-RDKkBRQ" keySequence="F7" command="_W4KOcUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W5vi0EsVEem97Z-RDKkBRQ" keySequence="F11" command="_W4NRyksVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6ABgEsVEem97Z-RDKkBRQ" keySequence="TAB" command="_W4NRxksVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6ABgUsVEem97Z-RDKkBRQ" keySequence="ALT+CTRL+\" command="_W4MDpksVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6E6AUsVEem97Z-RDKkBRQ" keySequence="ALT+SPACE" command="_W4PG9UsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6E6AksVEem97Z-RDKkBRQ" keySequence="CTRL+1" command="_W4KOfUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6FhEEsVEem97Z-RDKkBRQ" keySequence="CTRL+2" command="_W4NRwksVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6FhE0sVEem97Z-RDKkBRQ" keySequence="CTRL+7" command="_W4KOcUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6GIIEsVEem97Z-RDKkBRQ" keySequence="ALT+CTRL+;" command="_W4LclUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6GvMEsVEem97Z-RDKkBRQ" keySequence="CTRL+`" command="_W4KOe0sVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6KZkEsVEem97Z-RDKkBRQ" keySequence="CTRL+SHIFT+1" command="_W4KOfUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6LnsEsVEem97Z-RDKkBRQ" keySequence="ALT+CTRL+SHIFT+F" command="_W4MDs0sVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6MOwEsVEem97Z-RDKkBRQ" keySequence="ALT+CTRL+SHIFT+ARROW_LEFT" command="_W4K1gEsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6MOwUsVEem97Z-RDKkBRQ" keySequence="ALT+CTRL+SHIFT+ARROW_RIGHT" command="_W4LcpksVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6RHQUsVEem97Z-RDKkBRQ" keySequence="ALT+CTRL+ARROW_LEFT" command="_W4NRwUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6RuUEsVEem97Z-RDKkBRQ" keySequence="CTRL+F11" command="_W4NRw0sVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6RuUUsVEem97Z-RDKkBRQ" keySequence="ALT+CTRL+ARROW_RIGHT" command="_W4Lcp0sVEem97Z-RDKkBRQ"/>
+  </bindingTables>
+  <bindingTables xmi:id="_W5wJ4EsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.context.resultset.edit" bindingContext="_W4VNlUsVEem97Z-RDKkBRQ">
+    <bindings xmi:id="_W5wJ4UsVEem97Z-RDKkBRQ" keySequence="ALT+CTRL+SHIFT+CR" command="_W4Lck0sVEem97Z-RDKkBRQ"/>
+  </bindingTables>
+  <bindingTables xmi:id="_W57wEEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql" bindingContext="_W4VNkEsVEem97Z-RDKkBRQ">
+    <bindings xmi:id="_W57wEUsVEem97Z-RDKkBRQ" keySequence="CTRL+SHIFT+/" command="_W4MDuEsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W59lQEsVEem97Z-RDKkBRQ" keySequence="CTRL+/" command="_W4KOfEsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6DE0EsVEem97Z-RDKkBRQ" keySequence="CTRL+SHIFT+P" command="_W4K1kksVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6GII0sVEem97Z-RDKkBRQ" keySequence="CTRL+SHIFT+O" command="_W4LcqksVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6LAoksVEem97Z-RDKkBRQ" keySequence="ALT+CTRL+E" command="_W4KOd0sVEem97Z-RDKkBRQ"/>
+  </bindingTables>
+  <bindingTables xmi:id="_W57wEksVEem97Z-RDKkBRQ" elementId="com.genuitec.eclipse.inlinesearch.context" bindingContext="_W4VNlksVEem97Z-RDKkBRQ">
+    <bindings xmi:id="_W57wE0sVEem97Z-RDKkBRQ" keySequence="ALT+SHIFT+CR" command="_W4LcmUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6AokEsVEem97Z-RDKkBRQ" keySequence="ALT+SHIFT+1" command="_W4MDuUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6OD8ksVEem97Z-RDKkBRQ" keySequence="CTRL+ARROW_UP" command="_W4PuAEsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6OD80sVEem97Z-RDKkBRQ" keySequence="CTRL+ARROW_DOWN" command="_W4MDoksVEem97Z-RDKkBRQ"/>
+  </bindingTables>
+  <bindingTables xmi:id="_W5_acEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.script" bindingContext="_W4VNkksVEem97Z-RDKkBRQ">
+    <bindings xmi:id="_W5_acUsVEem97Z-RDKkBRQ" keySequence="ALT+6" command="_W4K1hUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6B2sEsVEem97Z-RDKkBRQ" keySequence="CTRL+SHIFT+\" command="_W4PG8UsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6FhEksVEem97Z-RDKkBRQ" keySequence="CTRL+6" command="_W4MqsUsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6GIIksVEem97Z-RDKkBRQ" keySequence="CTRL+SHIFT+O" command="_W4LckksVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6LAo0sVEem97Z-RDKkBRQ" keySequence="CTRL+SHIFT+6" command="_W4LclEsVEem97Z-RDKkBRQ"/>
+    <bindings xmi:id="_W6OD8EsVEem97Z-RDKkBRQ" keySequence="CTRL+F2" command="_W4K1jEsVEem97Z-RDKkBRQ"/>
+  </bindingTables>
+  <bindingTables xmi:id="_W6GvMksVEem97Z-RDKkBRQ" elementId="com.genuitec.eclipse.meExplorerScope" bindingContext="_W4V0oEsVEem97Z-RDKkBRQ">
+    <bindings xmi:id="_W6GvM0sVEem97Z-RDKkBRQ" keySequence="ALT+SHIFT+R" command="_7gBcZ0AWEemKW7ofSEOvWg"/>
+    <bindings xmi:id="_W6HWQksVEem97Z-RDKkBRQ" keySequence="ALT+SHIFT+V" command="_7gA1TUAWEemKW7ofSEOvWg"/>
+  </bindingTables>
+  <bindingTables xmi:id="_YbCWcUsVEem97Z-RDKkBRQ" bindingContext="_YbCWcEsVEem97Z-RDKkBRQ"/>
   <rootContext xmi:id="_7er_k0AWEemKW7ofSEOvWg" elementId="org.eclipse.ui.contexts.dialogAndWindow" contributorURI="platform:/plugin/org.eclipse.platform" name="In Dialogs and Windows" description="Either a dialog or a window is open">
     <children xmi:id="_7er_lEAWEemKW7ofSEOvWg" elementId="org.eclipse.ui.contexts.window" contributorURI="platform:/plugin/org.eclipse.platform" name="In Windows" description="A window is open">
       <children xmi:id="_7er_lUAWEemKW7ofSEOvWg" elementId="org.eclipse.e4.ui.contexts.views" contributorURI="platform:/plugin/org.eclipse.platform" name="%bindingcontext.name.bindingView"/>
@@ -789,6 +906,15 @@
         </children>
         <children xmi:id="_7gTJQEAWEemKW7ofSEOvWg" elementId="org.eclipse.ant.ui.AntEditorScope" name="Editing Ant Buildfiles" description="Editing Ant Buildfiles Context"/>
         <children xmi:id="_7gU-UUAWEemKW7ofSEOvWg" elementId="org.eclipse.jdt.ui.propertiesEditorScope" name="Editing Properties Files" description="Editing Properties Files Context"/>
+        <children xmi:id="_W4VNkEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql" name="Contexte d'&#xe9;diteur SQL">
+          <children xmi:id="_W4VNkksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.script" name="SQL Script Editor Context"/>
+          <children xmi:id="_W4VNlEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.context.resultset" name="Contexte de visionneuse de r&#xe9;sultats" description="Contexte de visionneuse de r&#xe9;sultats">
+            <children xmi:id="_W4VNlUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.context.resultset.edit" name="Contexte d'&#xe9;dition de r&#xe9;sultats" description="Contexte d'&#xe9;dition de r&#xe9;sultats"/>
+          </children>
+          <children xmi:id="_W4V0oUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.context.resultset.focused" name="Contexte de visionneuse de r&#xe9;sultats" description="Contexte de visionneuse de r&#xe9;sultats"/>
+        </children>
+        <children xmi:id="_W4VNk0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.script.focused" name="SQL Script Editor Context"/>
+        <children xmi:id="_W4VNlksVEem97Z-RDKkBRQ" elementId="com.genuitec.eclipse.inlinesearch.context" name="Inline Search is Active"/>
       </children>
       <children xmi:id="_7gTJJEAWEemKW7ofSEOvWg" elementId="org.eclipse.debug.ui.console" name="In I/O Console" description="In I/O console"/>
       <children xmi:id="_7gTJJUAWEemKW7ofSEOvWg" elementId="org.eclipse.compare.compareEditorScope" name="Comparing in an Editor" description="Comparing in an Editor"/>
@@ -802,6 +928,9 @@
       <children xmi:id="_7gTJMUAWEemKW7ofSEOvWg" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" name="In Tasks View"/>
       <children xmi:id="_7gTJPUAWEemKW7ofSEOvWg" elementId="org.eclipse.buildship.ui.contexts.taskview" name="In Gradle Tasks View" description="This context is activated when the Gradle Tasks view is in focus"/>
       <children xmi:id="_7gU-UkAWEemKW7ofSEOvWg" elementId="org.eclipse.egit.ui.RepositoriesView" name="In Git Repositories View"/>
+      <children xmi:id="_W4VNkUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.context.navigator" name="Contexte de navigateur de base de donn&#xe9;es" description="Contexte de navigateur de base de donn&#xe9;es"/>
+      <children xmi:id="_W4V0oEsVEem97Z-RDKkBRQ" elementId="com.genuitec.eclipse.meExplorerScope" name="Project Explorer +"/>
+      <children xmi:id="_W4V0oksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.perspective" name="DBeaver Perspective" description="DBeaver Perspective Context"/>
     </children>
     <children xmi:id="_7er_lkAWEemKW7ofSEOvWg" elementId="org.eclipse.ui.contexts.dialog" contributorURI="platform:/plugin/org.eclipse.platform" name="In Dialogs" description="A dialog is open"/>
   </rootContext>
@@ -845,6 +974,7 @@
   <rootContext xmi:id="_8mhKUEAWEemKW7ofSEOvWg" elementId="org.eclipse.ui.WorkingSetActionSet" name="Auto::org.eclipse.ui.WorkingSetActionSet"/>
   <rootContext xmi:id="_8mhKUkAWEemKW7ofSEOvWg" elementId="org.eclipse.ui.actionSet.openFiles" name="Auto::org.eclipse.ui.actionSet.openFiles"/>
   <rootContext xmi:id="_8mhxYEAWEemKW7ofSEOvWg" elementId="org.eclipse.ui.edit.text.actionSet.presentation" name="Auto::org.eclipse.ui.edit.text.actionSet.presentation"/>
+  <rootContext xmi:id="_YbCWcEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.search.searchActionSet" name="Auto::org.jkiss.dbeaver.search.searchActionSet"/>
   <descriptors xmi:id="_7nOQgEAWEemKW7ofSEOvWg" elementId="org.eclipse.e4.ui.compatibility.editor" allowMultiple="true" category="org.eclipse.e4.primaryDataStack" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor">
     <tags>Editor</tags>
   </descriptors>
@@ -1225,6 +1355,48 @@
     <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.wst.xml.ui"/>
     <tags>View</tags>
     <tags>categoryTag:XML</tags>
+  </descriptors>
+  <descriptors xmi:id="_XCDxUEsVEem97Z-RDKkBRQ" elementId="com.genuitec.eclipse.icons.designer.ui.views.IconsDesignerView" label="Icon Designer" iconURI="platform:/plugin/com.genuitec.eclipse.theming.icon.designer/icons/icons-designer-view.png" tooltip="" category="DevStyle" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.genuitec.eclipse.theming.icon.designer.views.IconsDesignerView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.genuitec.eclipse.theming.icon.designer"/>
+    <tags>View</tags>
+    <tags>categoryTag:DevStyle</tags>
+  </descriptors>
+  <descriptors xmi:id="_XCJQ4EsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.queryManager" label="Gestionnaire de requ&#xea;tes" iconURI="platform:/plugin/org.jkiss.dbeaver.ui/icons/misc/qm.png" tooltip="" category="Base de donn&#xe9;es" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.jkiss.dbeaver.ui.views.qm.QueryManagerView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.jkiss.dbeaver.core"/>
+    <tags>View</tags>
+    <tags>categoryTag:Base de donn&#xe9;es</tags>
+  </descriptors>
+  <descriptors xmi:id="_XCM7QEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.shellProcess" label="Processus" iconURI="platform:/plugin/org.jkiss.dbeaver.ui/icons/misc/shell.png" tooltip="" allowMultiple="true" category="Base de donn&#xe9;es" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.jkiss.dbeaver.ui.views.process.ShellProcessView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.jkiss.dbeaver.core"/>
+    <tags>View</tags>
+    <tags>categoryTag:Base de donn&#xe9;es</tags>
+  </descriptors>
+  <descriptors xmi:id="_XCOJYEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.databaseNavigator" label="Navigateur de bases de donn&#xe9;es" iconURI="platform:/plugin/org.jkiss.dbeaver.ui/icons/databases.png" tooltip="" category="Base de donn&#xe9;es" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.jkiss.dbeaver.ui.navigator.database.DatabaseNavigatorView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.jkiss.dbeaver.ui.navigator"/>
+    <tags>View</tags>
+    <tags>categoryTag:Base de donn&#xe9;es</tags>
+  </descriptors>
+  <descriptors xmi:id="_XCOwcEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.databaseBrowser" label="Database Browser" iconURI="platform:/plugin/org.jkiss.dbeaver.ui/icons/database_navigator.png" tooltip="" allowMultiple="true" category="Base de donn&#xe9;es" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.jkiss.dbeaver.ui.navigator.database.DatabaseBrowserView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.jkiss.dbeaver.ui.navigator"/>
+    <tags>View</tags>
+    <tags>categoryTag:Base de donn&#xe9;es</tags>
+  </descriptors>
+  <descriptors xmi:id="_XCPXgEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.projectNavigator" label="Projets" iconURI="platform:/plugin/org.jkiss.dbeaver.ui/icons/projects.png" tooltip="" category="Base de donn&#xe9;es" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.jkiss.dbeaver.ui.navigator.project.ProjectNavigatorView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.jkiss.dbeaver.ui.navigator"/>
+    <tags>View</tags>
+    <tags>categoryTag:Base de donn&#xe9;es</tags>
+  </descriptors>
+  <descriptors xmi:id="_XCP-kEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.projectExplorer" label="Explorateur de projets" iconURI="platform:/plugin/org.jkiss.dbeaver.ui/icons/project.png" tooltip="" category="Base de donn&#xe9;es" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.jkiss.dbeaver.ui.navigator.project.ProjectExplorerView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.jkiss.dbeaver.ui.navigator"/>
+    <tags>View</tags>
+    <tags>categoryTag:Base de donn&#xe9;es</tags>
   </descriptors>
   <menuContributions xmi:id="_7er_l0AWEemKW7ofSEOvWg" elementId="org.eclipse.ui.window.customizePerspective" contributorURI="platform:/plugin/org.eclipse.platform" positionInParent="popup:toolbar">
     <children xsi:type="menu:HandledMenuItem" xmi:id="_7er_mEAWEemKW7ofSEOvWg" elementId="org.eclipse.ui.window.customizePerspective" contributorURI="platform:/plugin/org.eclipse.platform" label="%command.name.customize" command="_7er_mUAWEemKW7ofSEOvWg"/>
@@ -2230,6 +2402,160 @@
   <commands xmi:id="_8QfP8UAWEemKW7ofSEOvWg" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.tasks.ui.open.repositories.view" commandName="Show Task Repositories View" description="Show Task Repositories View" category="_7f7VskAWEemKW7ofSEOvWg"/>
   <commands xmi:id="_8Qf3AEAWEemKW7ofSEOvWg" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.doc.legend.show.action" commandName="Show UI Legend" description="Show Tasks UI Legend" category="_7f7VskAWEemKW7ofSEOvWg"/>
   <commands xmi:id="_8Qf3AUAWEemKW7ofSEOvWg" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.context.ui.actions.tasklist.focus" commandName="Focus on Workweek" description="Focus on Workweek" category="_7f7VskAWEemKW7ofSEOvWg"/>
+  <commands xmi:id="_W4KOcEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.cell.setDefault" commandName="Set to default" description="Set cell to default value" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4KOcUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.grid.togglePreview" commandName="Actionner les panneaux de r&#xe9;sultats" description="Actionner les panneaux de r&#xe9;sultats suppl&#xe9;mentaires" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4KOcksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.project.active" commandName="D&#xe9;finir le projet actif" description="D&#xe9;finir le projet actif" category="_W4IZQUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4KOc0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.count" commandName="Nombre de lignes" description="R&#xe9;cup&#xe9;rer le nombre total de lignes" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4KOdEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.txn.pending" commandName="Transactions en attente" description="Liste de toutes les transactions en attente" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4KOdUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.text.content.format" commandName="Format du contenu" description="Formater le texte" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4KOdksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.run.statement" commandName="Ex&#xe9;cuter l'instruction SQL" description="Ex&#xe9;cuter l'instruction SQL" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4KOd0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.word.wrap" commandName="C&#xe9;sure de mot douce" description="C&#xe9;sure de mot douce dans l'&#xe9;diteur de texte" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4KOeEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.new.folder" commandName="Nouveau r&#xe9;pertoire" description="Cr&#xe9;er un nouveau r&#xe9;pertoire de connexions" category="_W4IZQUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4KOeUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ext.oracle.code.package.navigate" commandName="Go to source code" description="Navigate to object source code" category="_W4IZQEsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4KOeksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.run.all.rows" commandName="S&#xe9;lectionner toutes les lignes" description="S&#xe9;lectionner et afficher toutes les lignes (sans limite de taille de r&#xe9;cup&#xe9;ration)" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4KOe0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.switchPresentation" commandName="Changer la pr&#xe9;sentation" description="Changer la pr&#xe9;sentation des r&#xe9;sultats" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4KOfEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.comment.single" commandName="Commentaire sur une ligne" description="Ajouter ou supprimer un commentaire sur une ligne" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4KOfUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.referencesMenu" commandName="R&#xe9;f&#xe9;rencement des tables" description="Tables r&#xe9;f&#xe9;ren&#xe7;ant la table actuelle (avec des clefs &#xe9;trang&#xe8;res)" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4KOfksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.navigator.set.active" commandName="D&#xe9;finir l'objet actif" description="D&#xe9;finir l'objet actif" category="_W4IZQUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4KOf0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.debug.ui.command.debugConfigurationMenu" commandName="Debug last launched database object" description="Debug last launched database object" category="_7f7VskAWEemKW7ofSEOvWg"/>
+  <commands xmi:id="_W4KOgEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.row.edit" commandName="Editer la cellule" description="Editer la valeur de cellule dans une autre fen&#xea;tre/&#xe9;diteur" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4K1gEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.row.first" commandName="Premi&#xe8;re ligne" description="D&#xe9;placer vers la premi&#xe8;re ligne" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4K1gUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.tools.select.schema" commandName="S&#xe9;lectionner le sch&#xe9;ma actif" description="S&#xe9;lectionner le sch&#xe9;ma actif pour la base de donnu&#xe9;es en cours" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4K1gksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.export" commandName="Exporter les r&#xe9;sultats ... " description="Exporter les r&#xe9;sultats vers un fichier ou une autre table" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4K1g0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.connect" commandName="Se connecter" description="Se connecter &#xe0; la base de donn&#xe9;es" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4K1hEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.sql.script.associate" commandName="Associate with data source" description="Associate selected script(s) with data source" category="_W4IZQUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4K1hUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.switch.panel" commandName="Changer de panneau actif" description="Changer de panneau d'&#xe9;diteur SQL actif" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4K1hksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resource.create.folder" commandName="Cr&#xe9;er un nouveau r&#xe9;pertoire" description="Cr&#xe9;er un nouveau r&#xe9;pertoire" category="_W4IZQUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4K1h0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.invalidate" commandName="Rejeter/se reconnecter" description="Rejeter/se reconnecter &#xe0; une base de donn&#xe9;es" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4K1iEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.navigator.view.configure" commandName="Configurer les colonnes" description="Configurer la visibilit&#xe9; des colonnes" category="_W4IZQUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4K1iUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.openWith" commandName="Open With" description="Open data in external application" category="_W4IZQksVEem97Z-RDKkBRQ">
+    <parameters xmi:id="_W4K1iksVEem97Z-RDKkBRQ" elementId="processorId" name="%command.org.jkiss.dbeaver.core.resultset.openWith.param.processorId.name" optional="false"/>
+  </commands>
+  <commands xmi:id="_W4K1i0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.run.expression" commandName="Evaluer l'expression SQL" description="S&#xe9;lectionner la valeur de l'expression SQL s&#xe9;lectionn&#xe9;e" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4K1jEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.rename" commandName="Renommer le script SQL" description="Renommer le script SQL en cours" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4K1jUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.row.edit.inline" commandName="Edition int&#xe9;gr&#xe9;e" description="Editer la valeur de cellule dans l'&#xe9;diteur int&#xe9;gr&#xe9;" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4K1jksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.export.data" commandName="Exporter depuis la requ&#xea;te" description="Exporter les donn&#xe9;es de la requ&#xea;te en cours" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4K1j0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.show.log" commandName="Afficher le journal d'ex&#xe9;cution" description="Afficher le journal d'ex&#xe9;cution SQL" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4K1kEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.object.move.down" commandName="Vers le bas" description="D&#xe9;placer l'objet vers le bas" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4K1kUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.grid.copyRowNames" commandName="Copier les num&#xe9;ros de lignes" description="Copier les num&#xe9;ros des lignes s&#xe9;lectionn&#xe9;es" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4K1kksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.gotoMatchingBracket" commandName="Go to matching bracket" description="Position cursor on the matching bracket" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4K1k0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.migrate.connection" commandName="Migrer les connexions" description="Migrer les connexions vers un autre pilote" category="_W4IZQUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LckEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.process.stop" commandName="Arr&#xea;ter le processus" description="Arr&#xea;ter le processus en cours" category="_W4IZRUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LckUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.applyChanges" commandName="Appliquer les changements" description="Appliquer les changements de donn&#xe9;es" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LckksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.show.output" commandName="Afficher la sortie serveur" description="Afficher la console de sortie serveur" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4Lck0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.cell.save" commandName="Appliquer la valeur &#xe0; la cellule" description="Appliquer la valeur &#xe0; la cellule" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LclEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.maximize.result.panel" commandName="Agrandir le panneau de r&#xe9;sultats" description="Agrandir/normaliser le panneau de r&#xe9;sultats" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LclUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.fetch.page" commandName="R&#xe9;cup&#xe9;rer la page suivante" description="R&#xe9;cup&#xe9;rer la page suivante de r&#xe9;sultats" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LclksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.grid.copyColumnNames" commandName="Copier le nom des colonnes" description="Copier le nom des colonnes s&#xe9;lectionn&#xe9;es" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4Lcl0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.query.prev" commandName="Requ&#xea;te pr&#xe9;c&#xe9;dente" description="Passer &#xe0; la requ&#xea;te pr&#xe9;c&#xe9;dente" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LcmEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.object.filter.config" commandName="Configurer le filtre" description="Configurer le filtre d'objets" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LcmUsVEem97Z-RDKkBRQ" elementId="com.genuitec.eclipse.inlinesearch.replaceall" commandName="Replace All" category="_W4IZR0sVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LcmksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.cell.setNull" commandName="D&#xe9;finir &#xe0; NULL" description="D&#xe9;finir la valeur de la cellule &#xe0; NULL" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4Lcm0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.run.script" commandName="Ex&#xe9;cuter le script SQL" description="Ex&#xe9;cuter le script" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LcnEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.object.move.up" commandName="Vers le haut" description="D&#xe9;placer l'objet vers le haut" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LcnUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.compare.objects" commandName="Comparer" description="Comparer des objets base de donn&#xe9;es" category="_W4IZRUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LcnksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.txn.autocommit" commandName="Auto-commit" description="Change le mode transactionnel pour la session active" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4Lcn0sVEem97Z-RDKkBRQ" elementId="com.genuitec.myeclipse.perspective.meexplorer.search.searchmodecommand" commandName="Search Mode" category="_7f7VskAWEemKW7ofSEOvWg"/>
+  <commands xmi:id="_W4LcoEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resource.link.file" commandName="Lier un fichier" description="Cr&#xe9;er un lien vers un fichier du syst&#xe8;me" category="_W4IZQUsVEem97Z-RDKkBRQ">
+    <parameters xmi:id="_W4LcoUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resource.link.file.contenttype" name="Type de contenu du fichier li&#xe9;"/>
+  </commands>
+  <commands xmi:id="_W4LcoksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.disconnect" commandName="Se d&#xe9;connecter" description="Se d&#xe9;connecter de la base de donn&#xe9;es" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4Lco0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.object.filter.add.include" commandName="N'afficher que les objets s&#xe9;lectionn&#xe9;s" description="N'afficher que les objets s&#xe9;lectionn&#xe9;s" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LcpEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.new.connection" commandName="Nouvelle connexion" description="Connexion &#xe0; la base de donn&#xe9;es" category="_W4IZQUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LcpUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.query.next" commandName="Requ&#xea;te suivante" description="Passer &#xe0; la requ&#xea;te suivante" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LcpksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.row.last" commandName="Derni&#xe8;re ligne" description="D&#xe9;placer vers la derni&#xe8;re ligne" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4Lcp0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.row.next" commandName="Ligne suivante" description="D&#xe9;placer vers la prochaine ligne" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LcqEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.navigator.open.browser" commandName="Browse from here" description="Open new database browser view from current node" category="_W4IZQUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LcqUsVEem97Z-RDKkBRQ" elementId="com.genuitec.eclipse.inlinesearch.commands.showFindReplaceBarCommand" commandName="Show Inline Search" category="_W4IZR0sVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LcqksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.open.file" commandName="Charger un script SQL" description="Charger depuis un fichier" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4Lcq0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.object.filter.clear" commandName="R&#xe9;initialiser le filtre" description="R&#xe9;initialiser le filtre" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LcrEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.tools.select.connection" commandName="D&#xe9;finir la connexion active" description="Su00E9lectionner la connexion pour l'&#xe9;diteur en cours" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LcrUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ext.mockdata.resultset.mockdata" commandName="G&#xe9;n&#xe9;rer des donn&#xe9;es de test" description="MG&#xe9;n&#xe9;rateur de donn&#xe9;es de test" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LcrksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.object.delete" commandName="Supprimer un objet" description="Supprimer un objet base de donn&#xe9;es" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4Lcr0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.cell.reset" commandName="Annuler les changements sur la cellule" description="R&#xe9;tablir la valeur originale de la cellule" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LcsEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.object.open" commandName="Editer l'objet" description="Ouvrir l'&#xe9;diteur d'objet" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4LcsUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.navigate.object" commandName="Ouvrir la D&#xe9;claration" description="Ouvrir l'editeur de la base de donn&#xe9;es courante (surlign&#xe9;e)" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDoEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.run.statementNew" commandName="Ex&#xe9;cuter le SQL dans un nouvel onglet" description="Ex&#xe9;cuter l'instruction SQL dans un nouvel onglet" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDoUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.driver.manager" commandName="Gestionnaire de pilotes" description="Gestionnaire de pilotes" category="_W4IZQUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDoksVEem97Z-RDKkBRQ" elementId="com.genuitec.eclipse.inlinesearch.replace.toggle.open" commandName="Open Replace Bar" category="_W4IZR0sVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDo0sVEem97Z-RDKkBRQ" elementId="com.genuitec.myeclipse.perspective.meexplorer.search.regexcommand" commandName="Regular Expression" category="_7f7VskAWEemKW7ofSEOvWg"/>
+  <commands xmi:id="_W4MDpEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.sync.auto" commandName="Synchroniser la connexion avec le navigateur" description="Synchroniser automatiquement la connexion active avec la s&#xe9;lection du navigateur de bases de donn&#xe9;es" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDpUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.tools.menu" commandName="Outils contextuels" description="Affiche un menu contextuel avec les outils de bases de donn&#xe9;es" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDpksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.fetch.all" commandName="R&#xe9;cup&#xe9;rer toutes les donn&#xe9;es" description="R&#xe9;cup&#xe9;rer toutes les lignes" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDp0sVEem97Z-RDKkBRQ" elementId="com.genuitec.eclipse.core.ui.enableCodeLive" commandName="CodeLive" description="CodeLive Enablement" category="_7f7VskAWEemKW7ofSEOvWg"/>
+  <commands xmi:id="_W4MDqEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.row.add" commandName="Ajouter une ligne" description="Ajouter une nouvelle ligne" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDqUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.run.explain" commandName="Expliquer le plan d'ex&#xe9;cution" description="Expliquer le plan d'ex&#xe9;cution" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDqksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ext.oracle.job.run" commandName="Run" description="Run Job" category="_W4IZQEsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDq0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.disconnectAll" commandName="Se d&#xe9;connecter totalement" description="Se d&#xe9;connecter de toutes les bases" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDrEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.grid.togglePanel" commandName="Show/hide results panel" description="Show/hide some particular results panel" category="_W4IZQksVEem97Z-RDKkBRQ">
+    <parameters xmi:id="_W4MDrUsVEem97Z-RDKkBRQ" elementId="panelId" name="Panel Name" optional="false"/>
+  </commands>
+  <commands xmi:id="_W4MDrksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.object.goto" commandName="Ouvrir l'objet base de donn&#xe9;es ..." description="Ouvrir l'objet meta base de donn&#xe9;es" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDr0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.sql.editor.open" commandName="Editeur SQL" description="Ouvrir un &#xe9;diteur SQL (existant ou nouveau)" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDsEsVEem97Z-RDKkBRQ" elementId="com.genuitec.myeclipse.perspective.meexplorer.search.folderfiltertogglecommand" commandName="Do not match folders" category="_7f7VskAWEemKW7ofSEOvWg"/>
+  <commands xmi:id="_W4MDsUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.sync.connection" commandName="D&#xe9;finir la connexion depuis le navigateur" description="D&#xe9;finir la connexion active depuis la s&#xe9;lection du navigateur de bases de donn&#xe9;es" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDsksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.rejectChanges" commandName="Annuler les changements" description="Annuler les changements de donn&#xe9;es" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDs0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.focus.filter" commandName="Activer le filtre/&#xe9;diteur de donn&#xe9;es" description="Mettre le focus sur le filtre/&#xe9;diteur de donn&#xe9;es" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDtEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.save.file" commandName="Sauvegarder le script SQL" description="Sauvegarder dans un fichier" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDtUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.export.data" commandName="Exporter les donn&#xe9;es" description="Exporter les donn&#xe9;es issues de cette requ&#xea;te" category="_W4IZRUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDtksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.grid.columnsFitScreen" commandName="Columns pack: fit screen" description="Resize columns to see maximum information" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDt0sVEem97Z-RDKkBRQ" elementId="com.genuitec.myeclipse.breadcrumb.togglebreadcrumbcommand" commandName="BreadCrumb" category="_7f7VskAWEemKW7ofSEOvWg"/>
+  <commands xmi:id="_W4MDuEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.comment.multi" commandName="Commentaire sur plusieurs lignes" description="Ajouter ou enlever un commentaire sur plusieurs lignes" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDuUsVEem97Z-RDKkBRQ" elementId="com.genuitec.eclipse.inlinesearch.replaceone" commandName="Replace and Find Next" category="_W4IZR0sVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MDuksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.sql.editor.recent" commandName="Editeur SQL r&#xe9;cent" description="Ouvrir le dernier script SQL" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MqsEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.procedure.execute" commandName="Ex&#xe9;cuter la pro&#xe9;dure stock&#xe9;e" description="Ouvrir un nouvelle console SQL avec une requ&#xea;te d'ex&#xe9;cution de proc&#xe9;dure stock&#xe9;e" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MqsUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.toggle.result.panel" commandName="Panneau de r&#xe9;sultats" description="Afficher/masquer le panneau de r&#xe9;sultats" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MqsksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.erd.diagram.create" commandName="Create Diagram" description="Create Entity Relationship diagram" category="_W4IZQUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4Mqs0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ext.oracle.code.compile" commandName="Compile" description="Compile" category="_W4IZQEsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MqtEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.navigator.linkeditor" commandName="Lier avec l'&#xe9;diteur" description="Lier avec l'&#xe9;diteur" category="_W4IZQUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4MqtUsVEem97Z-RDKkBRQ" elementId="com.genuitec.eclipse.meexplorer.jdtsupport.assignworkingset.command" commandName="Assign Working Sets..." category="_7f7VskAWEemKW7ofSEOvWg"/>
+  <commands xmi:id="_W4MqtksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.project.create" commandName="Cr&#xe9;er un projet" description="Cr&#xe9;er un nouveau projet" category="_W4IZQUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4NRwEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.txn.log" commandName="Journal des transactions" description="Journal des transactions courant (requ&#xea;tes ex&#xe9;cut&#xe9;es)" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4NRwUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.row.previous" commandName="Ligne pr&#xe9;c&#xe9;dente" description="D&#xe9;placer vers la ligne pr&#xe9;c&#xe9;dente" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4NRwksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.toggleOrder" commandName="Changer l'ordre des r&#xe9;sultats" description="Changer l'ordre des r&#xe9;sultats(ascendant/descendant/defaut)" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4NRw0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.filterMenu.distinct" commandName="Filtrer par valeur" description="Filtrer par valeurs d'attributs uniques" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4NRxEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.project.refresh" commandName="Rafra&#xee;chir les projets" description="Rafra&#xee;chir tout l'espace de travail" category="_W4IZQUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4NRxUsVEem97Z-RDKkBRQ" elementId="com.genuitec.eclipse.inlinesearch.commands.hideFindReplaceBarCommand" commandName="Close Inline Search" category="_W4IZR0sVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4NRxksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.toggleMode" commandName="Vue des r&#xe9;sultats en grille/enregistrement" description="Vue des r&#xe9;sultats en grille/enregistrement" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4NRx0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.qm.clear" commandName="Vider le journal" description="Vider le journal du gestionnaire de requ&#xea;tes" category="_W4IZRUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4NRyEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.object.create" commandName="Cr&#xe9;er un objet" description="Cr&#xe9;er un nouvel objet base de donn&#xe9;es" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4NRyUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.object.filter.add.exclude" commandName="Masquer les objets s&#xe9;lectionn&#xe9;s" description="Masquer les objets s&#xe9;lectionn&#xe9;s" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4NRyksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.filterMenu" commandName="Menu des filtres" description="Menu contextuel de filtres" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4NRy0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.commit" commandName="Appliquer (commit)" description="Appliquer les modifications de cette session (commit)" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4N40EsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.morph.delimited.list" commandName="Morpher vers la liste d&#xe9;limit&#xe9;e" description="Morpher vers la liste d&#xe9;limit&#xe9;e" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4N40UsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.data.forSelection" commandName="Edit data" description="View/edit table  data" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PG8EsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.run.count" commandName="S&#xe9;lectionner le nombre de lignes" description="S&#xe9;lectionner le nombre de lignes pour la requ&#xea;te sous le curseur" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PG8UsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.close.tab" commandName="Fermer l'onglet" description="Fermer l'onglet de r&#xe9;sultats" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PG8ksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.assist.templates" commandName="Auto-compl&#xe9;tion du nom de mod&#xe8;le" description="Auto-compl&#xe9;tion du nom de mod&#xe8;le" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PG80sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.qm.filter" commandName="Filtrer ..." description="D&#xe9;finir les filtres du gestionnaire de requ&#xea;tes" category="_W4IZRUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PG9EsVEem97Z-RDKkBRQ" elementId="com.genuitec.myeclipse.perspective.meexplorer.search.casesensitivecommand" commandName="Case Sensitive" category="_7f7VskAWEemKW7ofSEOvWg"/>
+  <commands xmi:id="_W4PG9UsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.navigateLink" commandName="Ouvrir le lien" description="Suivre le lien de clef &#xe9;trang&#xe8;re" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PG9ksVEem97Z-RDKkBRQ" elementId="com.genuitec.eclipse.webclipse.evergreen.checkForUpdates" commandName="Check for Updates" category="_7f7VskAWEemKW7ofSEOvWg"/>
+  <commands xmi:id="_W4PG90sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.generateScript" commandName="G&#xe9;n&#xe9;rer un script" description="G&#xe9;n&#xe9;rer un script de mise &#xe0; jour" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PG-EsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.project.select" commandName="S&#xe9;lectionner le projet actif" description="S&#xe9;lectionner le projet actif" category="_W4IZQUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PG-UsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.sql.editor.forSelection" commandName="Lire les donn&#xe9;es dans une console SQL" description="Ouvrir une nouvelle console SQL en lecture seule de requ&#xea;te" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PG-ksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.rollback" commandName="Retour arri&#xe8;re (rollback)" description="Retour arri&#xe8;re (rollback) sur les modifications dans la session en cours" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PuAEsVEem97Z-RDKkBRQ" elementId="com.genuitec.eclipse.inlinesearch.replace.toggle.close" commandName="Close Replace Bar" category="_W4IZR0sVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PuAUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.grid.columnsFitValue" commandName="Columns pack: fit values" description="Resize columns to fit row values" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PuAksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.grid.toggleLayout" commandName="Toggle panels layout" description="Toggle vertical/horizontal panels layout" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PuA0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.navigator.preferences" commandName="Preferences" description="Navigator Preferences" category="_W4IZQUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PuBEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resource.link.folder" commandName="Cr&#xe9;er un lien vers un r&#xe9;pertoire" description="Cr&#xe9;er un lien vers un r&#xe9;pertoire du syst&#xe8;me" category="_W4IZQUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PuBUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.object.filter.toggle" commandName="Actionner le filtre" description="Actionner (activer/d&#xe9;sactiver) le filtre choisi" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PuBksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.sql.editor.create" commandName="Nouvel &#xe9;diteur SQL" description="Ouvrir un nouvel &#xe9;diteur SQL (cr&#xe9;er un nouveau script)" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PuB0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.edit.paste.special" commandName="Collage sp&#xe9;cial" description="Collage sp&#xe9;cial" category="_W4IZRUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PuCEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.edit.copy.special" commandName="Copie sp&#xe9;ciale" description="Copie sp&#xe9;ciale" category="_W4IZRUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PuCUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ui.editors.sql.run.scriptNew" commandName="Ex&#xe9;cuter les instructions dans un onglet &#xe0; part" description="Ex&#xe9;cuter les instructions du script dans un onglet de r&#xe9;sultat &#xe0; part" category="_W4IZRksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PuCksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.generate.uuid" commandName="Generate UUID" description="Generates UUID/GUID and inserts into active text editor or data editor" category="_W4IZREsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PuC0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.erd.diagram.view" commandName="View Diagram" description="View Entity Relations Diagram" category="_W4IZQUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PuDEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.row.copy" commandName="Dupliquer la" description="Dupliquer la ligne courante" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PuDUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.resultset.row.delete" commandName="Supprimer la ligne" description="Supprimer la ligne courante" category="_W4IZQksVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PuDksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.import.data" commandName="Importer des donn&#xe9;es" description="Importer des donn&#xe9;es depuis une table de donn&#xe9;es" category="_W4IZRUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_W4PuD0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.navigator.bookmark.add" commandName="Ajouter un favori" description="Ajouter un favori" category="_W4IZQUsVEem97Z-RDKkBRQ"/>
+  <commands xmi:id="_XEZ6sEsVEem97Z-RDKkBRQ" elementId="com.genuitec.myeclipse.help.darktheme.commandid" commandName="com.genuitec.myeclipse.help.darktheme.commandid"/>
+  <commands xmi:id="_XEdlEEsVEem97Z-RDKkBRQ" elementId="com.genuitec.migrate.to.codemix" commandName="com.genuitec.migrate.to.codemix"/>
+  <commands xmi:id="_YZ5G8EsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.search.OpenDataSearchPage" commandName="Recherche textuelle en base de donn&#xe9;es" category="_7f7VskAWEemKW7ofSEOvWg"/>
+  <commands xmi:id="_YZ5uAEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.search.OpenMetadataSearchPage" commandName="M&#xe9;tadonn&#xe9;es de base de donn&#xe9;es" category="_7f7VskAWEemKW7ofSEOvWg"/>
+  <commands xmi:id="_YZ8KQEsVEem97Z-RDKkBRQ" elementId="AUTOGEN:::org.jkiss.dbeaver.debug.ui.editorContribution/org.jkiss.dbeaver.debug.ui.actions.ManageBreakpointRulerAction" commandName="%actions.ManageBreakpointRulerAction.label" category="_7f7VskAWEemKW7ofSEOvWg"/>
   <addons xmi:id="_7er_mkAWEemKW7ofSEOvWg" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_7er_m0AWEemKW7ofSEOvWg" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_7er_nEAWEemKW7ofSEOvWg" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
@@ -2241,7 +2567,7 @@
   <addons xmi:id="_7er_okAWEemKW7ofSEOvWg" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_7er_o0AWEemKW7ofSEOvWg" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_7e6CAEAWEemKW7ofSEOvWg" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_W7FmoEsVEem97Z-RDKkBRQ" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_7f4SYEAWEemKW7ofSEOvWg" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_7f4SYUAWEemKW7ofSEOvWg" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
@@ -2278,4 +2604,12 @@
   <categories xmi:id="_7f7VsUAWEemKW7ofSEOvWg" elementId="org.eclipse.oomph.commands" name="Oomph"/>
   <categories xmi:id="_7f7VskAWEemKW7ofSEOvWg" elementId="org.eclipse.core.commands.categories.autogenerated" name="Uncategorized" description="Commands that were either auto-generated or have no category"/>
   <categories xmi:id="_DbsAQOIjEeWDJvu3hU0AuQ" elementId="org.eclipse.recommenders.news.rcp.category.news" contributorURI="platform:/plugin/org.eclipse.recommenders.news.rcp" name="%category.name.news" description="%category.description.news"/>
+  <categories xmi:id="_W4IZQEsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.ext.oracle" name="Oracle" description="Oracle Commands"/>
+  <categories xmi:id="_W4IZQUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.navigator" name="Navigateur de bases de donn&#xe9;es" description="Navigateur de bases de donn&#xe9;es"/>
+  <categories xmi:id="_W4IZQksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.rs" name="R&#xe9;sultats" description="Commandes sur les r&#xe9;sultats"/>
+  <categories xmi:id="_W4IZQ0sVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.debug.ui.commands.category" name="Database Debug" description="Database Debug commands"/>
+  <categories xmi:id="_W4IZREsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.database" name="Connexion" description="Connexion &#xe0; une base de donn&#xe9;es"/>
+  <categories xmi:id="_W4IZRUsVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.util" name="Utilitaires" description="Commandes utilitaires"/>
+  <categories xmi:id="_W4IZRksVEem97Z-RDKkBRQ" elementId="org.jkiss.dbeaver.core.sql" name="Editeur SQL" description="Editeur SQL"/>
+  <categories xmi:id="_W4IZR0sVEem97Z-RDKkBRQ" elementId="com.genuitec.eclipse.inlinesearch.commands.category" name="Inline Search"/>
 </application:Application>
